@@ -7,6 +7,8 @@ import RedeemIcon from '@material-ui/icons/Redeem';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
 
+import ProfilePic from './profile.png';
+
 function Nav() {
   // navstate == True => Navbar should be dark
   const [navshow, setNavShow] = React.useState(false);
@@ -57,7 +59,7 @@ function Nav() {
           <img
             className='nav__avatar'
             alt='Profile Logo'
-            src={window.location.origin + '/profile.png'}
+            src={ProfilePic}
           ></img>
           <IconButton className='nav__button'>
             <ArrowDropDownIcon></ArrowDropDownIcon>
