@@ -1,0 +1,55 @@
+.row__posters {
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: auto;
+  padding: 20px;
+  cursor: grab;
+  overflow: auto;
+  -ms-overflow-style: none; /* IE 11 */
+  scrollbar-width: none;
+}
+
+.row__posters::-webkit-scrollbar {
+  display: none !important;
+}
+
+.row__poster {
+  width: 100%;
+  object-fit: contain;
+  transition: transform 450ms;
+  margin-right: 10px;
+  max-height: 200px;
+  min-height: 200px;
+}
+.row__poster:hover {
+  transform: scale(1.08);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.row__posterLarge {
+  max-height: 350px !important;
+}
+.row__posterLarge:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.row__posterImage {
+  object-fit: contain;
+  transition: transform 450ms;
+  margin-right: 10px;
+  max-height: 200px;
+  min-height: 200px;
+}
+
+.row__posterImageLarge {
+  max-height: 350px !important;
+}
+
+.category__title {
+  color: white;
+  margin-left: 1.3rem;
+  font-size: 1.8rem;
+  font-weight: 800;
+  padding-bottom: 0.3rem;
+}
